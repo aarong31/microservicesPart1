@@ -14,7 +14,7 @@ export default ({ postId }) => {
         setContent('');
     };
 
-    return <div>
+    return (<div>
         <form onSubmit={onSubmit}> 
             <div className="form-group">
                 <label>New Comment</label>
@@ -26,5 +26,6 @@ export default ({ postId }) => {
             </div>
             <button className="btn btn-primary">Submit</button>
         </form>
-    </div>;
+    </div>
+    );
 };
